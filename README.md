@@ -47,13 +47,13 @@ As a simple test scenario in the Yamba application we will want to:
    
 ## Maven dependencies
 
-1. For Appium Java libraries we have added in the `pom.xml` file: 
+1. For Appium Java libraries we have added in the `pom.xml` file:   
     `<dependency>
         <groupId>io.appium</groupId>
         <artifactId>java-client</artifactId>
         <version>5.0.4</version>
     </dependency>`
-2. For JUnit java libraries we have added in the `pom.xml` file:
+2. For JUnit java libraries we have added in the `pom.xml` file:    
     `<dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -63,7 +63,7 @@ As a simple test scenario in the Yamba application we will want to:
     
 ## Test class
 
-   1. Start Appium server
+   1. Start Appium server at localhost 127.0.0.1 and default port
    2. Start the Appium Inspector session for the Yamba application
    3. Identify the mobile elements with Appium Inspector
       * The More Options button - we will click the More Options button
@@ -121,14 +121,17 @@ As a simple test scenario in the Yamba application we will want to:
          
    8. Find and click the Settings button:
    
-       `String settingsButtonXpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView";
-        MobileElement settingsElement = (MobileElement) androidDriver.findElementByXPath(settingsButtonXpath);
-        settingsElement.click();`
+       `String settingsButtonXpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView";   
+        MobileElement settingsElement = (MobileElement) androidDriver.findElementByXPath(settingsButtonXpath);  
+        settingsElement.click();`   
         
    9. Find and verify that the back button is displayed. The JUnit `Assert` method is doing the verification:
    
        `MobileElement backButtonElement = (MobileElement) androidDriver.findElementByAccessibilityId("Navigate up");
         Assert.assertTrue("The back button is not displayed", backButtonElement.isDisplayed());`
+   
+   10. Close the Android driver session:
+        `androidDriver.quit();`
 
 ## Run the test method
 
