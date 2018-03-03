@@ -98,7 +98,8 @@ As a simple test scenario in the Yamba application we will want to:
              }
         `
         2. Add the desired capabilities:
-        `DesiredCapabilities capabilities = new DesiredCapabilities();
+        ```
+         DesiredCapabilities capabilities = new DesiredCapabilities();
          capabilities.setCapability(CapabilityType.PLATFORM, "Android");
          capabilities.setCapability(MobileCapabilityType.UDID, "192.168.56.101:5555");
          capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "EmulatorS7");
@@ -109,21 +110,23 @@ As a simple test scenario in the Yamba application we will want to:
          capabilities.setCapability(MobileCapabilityType.APP, appPath);
  
          capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.example.android.yamba");
-         capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.example.android.yamba.MainActivity");`
-         
+         capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.example.android.yamba.MainActivity");
+         ```
+
          3. Start the Android driver session:
          `AndroidDriver androidDriver = new AndroidDriver(serverUrl, capabilities);`
                  
-   7. Find and clik the More Options button:
+   7. Find and click the More Options button:
   
        `MobileElement moreOptionsElement = (MobileElement) androidDriver.findElementByAccessibilityId("More options");
         moreOptionsElement.click();`
          
    8. Find and click the Settings button:
-   
-       `String settingsButtonXpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView";   
+        ```
+       String settingsButtonXpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView";   
         MobileElement settingsElement = (MobileElement) androidDriver.findElementByXPath(settingsButtonXpath);  
-        settingsElement.click();`   
+        settingsElement.click();
+        ```
         
    9. Find and verify that the back button is displayed. The JUnit `Assert` method is doing the verification:
    
