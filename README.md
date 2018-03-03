@@ -23,7 +23,7 @@ The test project is a Maven project with the default structure:
    * `src/test/java` - the Java test class with a simple test method
 
 ## Application under test
-Yamba is Yet Another Micro Blogging App. It was written to support various Android training classes, most specifically Android Bootcamp, and is an evolution of the project from Learning Android book written by Marko Gargenta. You can find it at http://github.com/thenewcircle/yamba. The version of the app used in this tutorial was downloaded from: https://github.com/mailat/android-testing-2016-02-19.
+Yamba (Yet Another Micro Blogging App) was written to support various Android training classes, most specifically Android Bootcamp, and is an evolution of the project from Learning Android book written by Marko Gargenta. You can find it at http://github.com/thenewcircle/yamba. The version of the app used in this tutorial was downloaded from: https://github.com/mailat/android-testing-2016-02-19.
 
 The debug apk can be found here:
 * `src/main/java/resources/yamba-debug.apk`
