@@ -11,13 +11,11 @@ Basic Java Maven project with Appium and JUnit test class for simple Android app
 ## Project structure & resources
 
 Please use the following names for the Maven project, but replace with your name value where specified:
-
-    `
-        <groupId>"yourNameHere"-training-mobile-basics</groupId>
-        <artifactId>mobile-maven-basic-project</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    `
-
+```
+<groupId>"yourNameHere"-training-mobile-basics</groupId>
+<artifactId>mobile-maven-basic-project</artifactId>
+<version>1.0-SNAPSHOT</version>
+```
 The test project is a Maven project with the default structure:
 
    * `training-mobile-basic-project/pom.xml` - the maven project configuration file, where all Java library dependencies should be added
@@ -75,7 +73,7 @@ As a simple test scenario in the Yamba application we will want to:
       * The More Options button - we will click the More Options button
         `accessibility id` = `More options` - accessibility id from Appium inspector
         
-      * The Settings button - we will click the Settings button
+      * The Settings button - we will click the Settings button 
         `xpath` = `/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView`
         The xpath from Appium inspector
         
@@ -94,7 +92,7 @@ As a simple test scenario in the Yamba application we will want to:
         }
         ```
 
-The following steps need to be followed in the test method, writing the code inside the `{ }`
+The following steps need to be followed in the test method, writing the code inside the testSetting method`{ }`
    
    6. Create AppiumDriver with necessary capabilites
     These are similar to the ones used in the Appium Session window.
@@ -123,12 +121,16 @@ The following steps need to be followed in the test method, writing the code ins
         ```
         
          3. Start the Android driver session:
-         `AndroidDriver androidDriver = new AndroidDriver(serverUrl, capabilities);`
+         ```
+         AndroidDriver androidDriver = new AndroidDriver(serverUrl, capabilities);
+         ```
                  
    7. Find and click the More Options button:
   
-       `MobileElement moreOptionsElement = (MobileElement) androidDriver.findElementByAccessibilityId("More options");
-        moreOptionsElement.click();`
+       ```
+       MobileElement moreOptionsElement = (MobileElement) androidDriver.findElementByAccessibilityId("More options");
+       moreOptionsElement.click();
+       ```
          
    8. Find and click the Settings button:
         ```
@@ -145,7 +147,9 @@ The following steps need to be followed in the test method, writing the code ins
        ```
    
    10. Close the Android driver session:
-        `androidDriver.quit();`
+        ```
+        androidDriver.quit();
+        ```
 
 ## Run the test method
 
