@@ -37,10 +37,12 @@ The test user for this app is:
 As a simple test scenario in the Yamba application we will want to:
    1. Start the Yamba application
    2. Click the `More options` button
+   
       ![Alt text](screenshots/MoreOptionsBtn.png?raw=true)
    3. Click the `Settings` button
-       ![Alt text](screenshots/MoreOptionsBtn.png?raw=true)
-   4. Verify we landed on the Settings screen
+   
+       ![Alt text](screenshots/SettingsBtn.png?raw=true)
+   4. Verify we landed on the Settings screen, meaning the Back button is displayed
 
 ## Maven dependencies
 
@@ -63,9 +65,15 @@ As a simple test scenario in the Yamba application we will want to:
    1. Start Appium server
    2. Start the Appium Inspector session for the Yamba application
    3. Identify the mobile elements with Appium Inspector
-      * The More Options button
-      * The Settings button
-      * The Username label
+      * The More Options button - we will click the More Options button
+        `accessibility id` = `More options` - accessibility id from Appium inspector
+        
+      * The Settings button - we will click the Settings button
+        `xpath` = `/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView`
+        The xpath from Appium inspector
+        
+      * The back button - this will be used to verify that the Settings screen has been reached
+        `accessibility id` = `Navigate up` - accessibility id from Appium inspector
       
    4. Create a new class
    5. Create a new test method
@@ -74,7 +82,15 @@ As a simple test scenario in the Yamba application we will want to:
    8. Verify the click result
 
 ## Run the test method
-Run in IntelliJ IDEA
+
+Make sure the Appium server at localhost is running, started through Appium desktop app.
+
+Run in IntelliJ IDEA - IntelliJ IDEA already has an automatic way of running the JUnit tests,
+therefore it is enough to:
+    * Right click on the test method name and select `Run` option
+The test will start running, and the app will start on the emulator/device
+   
 
 ## Practice :exclamation: :sweat:
-TBD
+
+Finish the test scenario which we started in the training.
