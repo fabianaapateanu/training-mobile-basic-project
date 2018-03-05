@@ -7,8 +7,13 @@ Basic Java Maven project with Appium and JUnit test class for simple Android app
 * Installation of IntelliJ IDEA will be done during the training session, but for reference all install steps can be found here:
    https://www.jetbrains.com/help/idea/install-and-set-up-intellij-idea.html
 
-
 ## Project structure & resources
+
+Create new Maven Project in IntelliJ:
+
+1. Go to File -> New Project
+2. From the left side select Maven adn click Next (Java Sdk should aleardy be defined)
+3. On the next page you need to fill: groupId, artifactId, version
 
 Please use the following names for the Maven project, but replace with your name value where specified:
 ```
@@ -16,6 +21,10 @@ Please use the following names for the Maven project, but replace with your name
 <artifactId>mobile-maven-basic-project</artifactId>
 <version>1.0-SNAPSHOT</version>
 ```
+4. Specify the name and location settings. Click Finish.
+
+For more details about New Maven Project in IntelliJ IDEA: https://www.jetbrains.com/help/idea/maven.html
+
 The test project is a Maven project with the default structure:
 
    * `training-mobile-basic-project/pom.xml` - the maven project configuration file, where all Java library dependencies should be added
