@@ -191,6 +191,6 @@ therefore it is enough to:
     
 The test will start running, and the app will start on the emulator/device
    
-## Practice :exclamation: :sweat:
+## Practice, practice :exclamation: :sweat:
 
 Finish the test scenario which we started in the training.
