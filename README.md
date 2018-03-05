@@ -92,7 +92,8 @@ As a simple test scenario in the Yamba application we will want to:
    4. Create a new Java class
         Right click on the directory `src/test/java` and select `New` and then `Java class`.
         The class file will be opened.
-      The Java classes which need to be imported:
+        
+        The Java classes which need to be imported:
       ```
       import io.appium.java_client.MobileElement;
       import io.appium.java_client.android.AndroidDriver;
@@ -193,7 +194,7 @@ The test will start running, and the app will start on the emulator/device
    
 ## Practice, practice :exclamation: :sweat:
 
-1. Perform again the New Maven Project wizard, just to practice again how to create a Maven project. Then create a new Java class
-in src/test/java and write a JUnit test method in this class by using the @Test annotation.
+1. Perform again the New Maven Project wizard, just to practice again how to create a Maven project. 
+Add the two needed dependencies, Appium and JUnit. Then create a new Java class in src/test/java and write a JUnit test method in this class by using the @Test annotation.
 
 2. Finish the test scenario which we started in the training.
