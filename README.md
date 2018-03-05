@@ -12,7 +12,7 @@ Basic Java Maven project with Appium and JUnit test class for simple Android app
 Create new Maven Project in IntelliJ:
 
 1. Go to File -> New Project
-2. From the left side select Maven adn click Next (Java Sdk should aleardy be defined)
+2. From the left side select Maven adn click Next (Java Sdk should already be defined)
 3. On the next page you need to fill: groupId, artifactId, version
 
 Please use the following names for the Maven project, but replace with your name value where specified:
@@ -193,4 +193,7 @@ The test will start running, and the app will start on the emulator/device
    
 ## Practice, practice :exclamation: :sweat:
 
-Finish the test scenario which we started in the training.
+1. Perform again the New Maven Project wizard, just to practice again how to create a Maven project. Then create a new Java class
+in src/test/java and write a JUnit test method in this class by using the @Test annotation.
+
+2. Finish the test scenario which we started in the training.
