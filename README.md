@@ -122,6 +122,11 @@ The following steps need to be followed in the test method, writing the code ins
         ```
 
         2. Add the desired capabilities:
+        In the `String appPath` line below you will need to add the full disk path to your yamba-debug.apk between "":
+        `String appPath = "full Disk Path Copied from where you downloaded and unzipped the yamba-debug.apk";`
+        
+        All the desired capabilities are:
+        
          ```
          DesiredCapabilities capabilities = new DesiredCapabilities();
          capabilities.setCapability(CapabilityType.PLATFORM, "Android");
