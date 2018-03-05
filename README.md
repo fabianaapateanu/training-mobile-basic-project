@@ -83,6 +83,21 @@ As a simple test scenario in the Yamba application we will want to:
    4. Create a new Java class
         Right click on the directory `src/test/java` and select `New` and then `Java class`.
         The class file will be opened.
+      The Java classes which need to be imported:
+      ```
+      import io.appium.java_client.MobileElement;
+      import io.appium.java_client.android.AndroidDriver;
+      import io.appium.java_client.remote.AndroidMobileCapabilityType;
+      import io.appium.java_client.remote.MobileCapabilityType;
+      import org.junit.Assert;
+      import org.junit.Test;
+      import org.openqa.selenium.remote.CapabilityType;
+      import org.openqa.selenium.remote.DesiredCapabilities;
+
+      import java.io.File;
+      import java.net.MalformedURLException;
+      import java.net.URL;
+      ```
     
    5. Create a new test method
         In the class add the JUnit annotation for test method and afterwards the test method name:
