@@ -91,7 +91,7 @@ As a simple test scenario in the Yamba application we will want to:
       
    4. Create a new Java class
         Right click on the directory `src/test/java` and select `New` and then `Java class`.
-        The class file will be opened.
+        Add the name `MavenJunitTestClass`, then the class file will be opened.
         
         The Java classes which need to be imported:
       ```
@@ -198,3 +198,5 @@ The test will start running, and the app will start on the emulator/device
 Add the two needed dependencies, Appium and JUnit. Then create a new Java class in src/test/java and write a JUnit test method in this class by using the @Test annotation.
 
 2. Finish the test scenario which we started in the training.
+
+3. Inspect other application elements with Appium Inspector and identify their locators.
