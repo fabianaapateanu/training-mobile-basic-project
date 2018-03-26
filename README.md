@@ -28,7 +28,7 @@ For more details about New Maven Project in IntelliJ IDEA: https://www.jetbrains
 The test project is a Maven project with the default structure:
 
    * `training-mobile-basic-project/pom.xml` - the maven project configuration file, where all Java library dependencies should be added
-   * `src/main/java/resources` - the app under tests, yamba-debug.apk file
+   * `src/main/java/resources` - the app under test, yamba-debug.apk file
    * `src/test/java` - the Java test class with a simple test method
 
 ## Application under test
